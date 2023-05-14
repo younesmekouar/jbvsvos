@@ -1,24 +1,34 @@
 # jbvsvos
-source /home/younesmekouar/ardupilot/Tools/completion/completion.bash
 
-source /usr/share/gazebo/setup.sh
+sim_vehicle.py -v ArduCopter -f gazebo-iris --map --console
 
-export /home/younesmekouar/ardupilot_gazebo=~/ardupilot_gazebo/models
+SIM_VEHICLE: Start
 
-export /home/younesmekouar/ardupilot_gazebo=~/ardupilot_gazebo/worlds:${/home/$
+SIM_VEHICLE: Killing tasks
 
-source /usr/share/gazebo/setup.sh
+SIM_VEHICLE: Starting up at SITL location
 
-export /home/younesmekouar/ardupilot_gazebo=~/ardupilot_gazebo/models
+SIM_VEHICLE: WAF build
 
-source /usr/share/gazebo/setup.sh
+SIM_VEHICLE: Configure waf
 
-export /home/younesmekouar/ardupilot_gazebo/models=~/ardupilot_gazebo/models
+SIM_VEHICLE: "/home/younesmekouar/ardupilot/modules/waf/waf-light" "configure" "--board" "sitl"
 
-export /home/younesmekouar/ardupilot_gazebo/worlds=~/ardupilot_gazebo/worlds:$$
+Setting top to                           : /home/younesmekouar/ardupilot 
 
-source /usr/share/gazebo/setup.sh
+Setting out to                           : /home/younesmekouar/ardupilot/build 
 
-export GAZEBO_MODEL_PATH=~/ardupilot_gazebo/models
+Autoconfiguration                        : enabled 
 
-export GAZEBO_RESOURCE_PATH=~/ardupilot_gazebo/worlds:${GAZEBO_RESOURCE_PATH
+Checking for program 'python'            : /usr/bin/python 
+
+Checking for python version >= 3.6.9     : 2.7.17 
+
+The python version is too old, expecting (3, 6, 9)
+
+(complete log in /home/younesmekouar/ardupilot/build/config.log)
+
+SIM_VEHICLE: (Configure waf) exited with code 256
+
+SIM_VEHICLE: Killing tasks
+
